@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="public/style.css" />
   </head>
   <body>
-    <!-- =================== NAVBAR ===================-->
+
+    <!--=================== NAVBAR ===================-->
     <nav>
       <ul>
-        <li>LOGO</li>
+        <li class="d-none d-sm-block">LOGO</li>
         <li><a href="" class="name">Maurizio Schiavarelli</a></li>
       </ul>
       <ul>
@@ -22,9 +23,21 @@
       </ul>
     </nav>
 
-    <!-- =================== HEADER ===================-->
+    <!--=================== HERO SECTION ===================-->
+    <section class="bgimage">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                <h2 class="hero_title">Ciao, sono Maurizio</h2>
+                <p class="hero_desc">Ex studente Aulab e sviluppatore web junior</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=================== HEADER ===================-->
     <header>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row align-items-center">
           <div class="col-12 col-md-6">
             <h2 class="h2">Ciao, sono <span class="name">Maurizio</span></h2>
@@ -61,12 +74,12 @@
       </div>
     </header>
 
-    <!-- =================== MAIN ===================-->
+    <!--=================== MAIN ===================-->
     <main>
       <section>
 
         <article>
-          <div class="container">
+          <div class="container-fluid">
             <div class="row">
               <div class="col-12 d-flex justify-content-around mt-5">
                 <div>
@@ -86,26 +99,27 @@
           </div>
         </article>
 
+    <!--=================== PROJECT ===================-->
         <article>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 project">
                         <h2 class="m-2">I miei progetti</h2>
-                        <div class="d-flex justify-content-between align-items-center card-project m-4">
+                        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center card-project m-4">
                             <h3 class="ms-2">Progetto Laravel DoTravel</h3>
-                            <img src="public/img/DoTravel.jpeg" alt="" class="img-fluid w-25">
+                            <img src="public/img/DoTravel.jpeg" alt="" class="img-fluid projectImg">
                         </div>
-                        <div class="d-flex justify-content-between align-items-center card-project m-4">
+                        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center card-project m-4">
                             <h3 class="ms-2">Progetto Fallout "NUKA-TERMINAL"</h3>
-                            <img src="public/img/DoTravel.jpeg" alt="" class="img-fluid w-25">
+                            <img src="public/img/DoTravel.jpeg" alt="" class="img-fluid projectImg">
                         </div>
-                        <div class="d-flex justify-content-between align-items-center card-project m-4">
+                        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center card-project m-4">
                             <h3 class="ms-2">Progetto front-end codeCademy</h3>
-                            <img src="public/img/DoTravel.jpeg" alt="" class="img-fluid w-25">
+                            <img src="public/img/DoTravel.jpeg" alt="" class="img-fluid projectImg">
                         </div>
-                        <div class="d-flex justify-content-between align-items-center card-project m-4">
+                        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center card-project m-4">
                             <h3 class="ms-2">Progetto finale Aulab</h3>
-                            <img src="public/img/DoTravel.jpeg" alt="" class="img-fluid w-25">
+                            <img src="public/img/DoTravel.jpeg" alt="" class="img-fluid projectImg">
                         </div>
                     </div>
                 </div>
