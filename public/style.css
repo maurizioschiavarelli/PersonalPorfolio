@@ -125,3 +125,10 @@ header ul li{
 
 /* ================== MAIN ================== */
 
+.project{
+    background-color: black;
+}
+
+.card-project{
+    background-color: rgb(27, 27, 27);
+}
