@@ -1,0 +1,127 @@
+/* ================== CSS RESET E MISCELLANEOUS ================== */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+
+:root{
+    font-size: 16px;
+    --text-color: #ffffff;
+    --link-color: #f80000;
+}
+
+a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+body{
+    background-color: #0d0113;
+}
+
+.name{
+    background: #6E41CF;
+    background: linear-gradient(to top right, #6E41CF 10%, #B41ECF 57%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.html{
+    background: #CF1F16;
+    background: linear-gradient(to top right, #CF1F16 0%, #CFA879 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.css{
+    background: #4416CF;
+    background: linear-gradient(to top right, #4416CF 0%, #92AEFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.js{
+    background: #CF9E22;
+    background: linear-gradient(to top right, #CF9E22 14%, #E3FF67 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.php{
+    background: #2600CF;
+    background: linear-gradient(to top right, #2600CF 0%, #AD2AFF 78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.laravel{
+    background: #CF0000;
+    background: linear-gradient(to top right, #CF0000 0%, #FF5D75 78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.react{
+    background: #2ACCCF;
+    background: linear-gradient(to top right, #2ACCCF 0%, #8DC4FF 78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.livewire{
+    background: #CF66B5;
+    background: linear-gradient(to top right, #CF66B5 46%, #4E74FF 78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+
+/* ================== NAVBAR ================== */
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li{
+    margin: 10px 20px;
+    list-style: none;
+    color: var(--text-color);
+}
+
+/* ================== HEADER ================== */
+header{
+    margin-top: 4%;
+}
+
+header img{
+    transform: rotate(2deg);
+    border-radius: 4%;
+}
+
+header div span{
+   font-size: larger;
+}
+
+header ul{
+    padding: 0px;
+    display: flex;
+}
+
+header ul li{
+    margin: 0px 16px;
+}
+
+/* ================== MAIN ================== */
+
