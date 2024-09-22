@@ -18,6 +18,7 @@ a{
 }
 
 body{
+    margin-top: 45px;
     background-color: #0d0113;
 }
 
@@ -86,9 +87,22 @@ header{
 }
 
 /* ================== NAVBAR ================== */
-nav{
+.nav{
     display: flex;
     justify-content: space-around;
+    width: 100%;
+    margin: auto;;
+    transition: 900ms;
+}
+
+.navScroll{
+    margin:20px auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000;
+    width: 90%;
+    border-radius: 12px;
+    transition: 900ms;
 }
 
 nav ul{
