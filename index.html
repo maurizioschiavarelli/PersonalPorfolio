@@ -1,44 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <!--=================== HEAD ===================-->
   <head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="public/style.css" />
+
   </head>
+
+    <!--=================== BODY ===================-->
   <body>
 
     <!--=================== NAVBAR ===================-->
     <nav class="nav fixed-top" id="nav">
+
       <ul>
-        <li class="d-none d-sm-block">LOGO</li>
-        <li><a href="" class="name">Maurizio Schiavarelli</a></li>
+        <li class="d-none d-md-block">LOGO</li>
+        <li><a href="#home" class="name">Maurizio Schiavarelli</a></li>
       </ul>
+
       <ul>
         <li><a href="#chiSono">Chi sono</a></li>
         <li><a href="#progetti">Progetti</a></li>
-        <li><a href="">Contatti</a></li>
+        <li><a href="#contatti">Contatti</a></li>
       </ul>
+
     </nav>
 
     <!--=================== HERO SECTION ===================-->
-    <section class="bgimage">
-        <div class="container-fluid">
-            <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                <h2 class="hero_title">Ciao, sono Maurizio</h2>
-                <p class="hero_desc">Ex studente Aulab e sviluppatore web junior</p>
-            </div>
-            </div>
+    <section class="bgimage" id="home">
+
+      <div class="container-fluid">
+        <div class="row">
+          
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+            <h2 class="hero_title">Ciao, sono Maurizio</h2>
+            <p class="hero_desc">Ex studente Aulab e sviluppatore web junior</p>
+          </div>
+
         </div>
+      </div>
+
     </section>
 
     <!--=================== HEADER ===================-->
     <header id="chiSono">
+
       <div class="container-fluid">
         <div class="row align-items-center">
+
           <div class="col-12 col-md-6">
             <h2 class="h2">Ciao, sono <span class="name">Maurizio</span></h2>
             <h3>Web Developer Junior</h3>
@@ -63,20 +77,25 @@
               <li class="livewire">LIVEWIRE</li>
             </ul>
           </div>
+
           <div class="col-12 col-md-6 mt-5 mt-md-0">
             <img src="public/img/grafik-coding.jpg" alt="" class="img-fluid" />
           </div>
+
         </div>
       </div>
+
     </header>
 
     <!--=================== MAIN ===================-->
     <main>
-      <section>
 
+      <section>
         <article>
+
           <div class="container-fluid">
             <div class="row">
+
               <div class="col-12 d-flex justify-content-around mt-5">
                 <div>
                   <h2 id="numberExp">1</h2>
@@ -88,56 +107,103 @@
                 </div>
                 <div>
                   <h2>∞</h2>
-                  <p>Voglia di crescere</p>
+                  <p>Placeholder</p>
                 </div>
               </div>
+
             </div>
           </div>
+
         </article>
 
-    <!--=================== PROJECT ===================-->
+        <!--=================== PROJECT ===================-->
         <article id="progetti">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 project">
-                        <h2 class="m-2">I miei progetti</h2>
-                        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center card-project m-4">
-                            <h3 class="ms-2">Progetto Laravel DoTravel</h3>
-                            <img src="public/img/DoTravel.jpeg" alt="" class="img-fluid projectImg">
-                        </div>
-                        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center card-project m-4">
-                            <h3 class="ms-2">Progetto Fallout "NUKA-TERMINAL"</h3>
-                            <img src="public/img/DoTravel.jpeg" alt="" class="img-fluid projectImg">
-                        </div>
-                        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center card-project m-4">
-                            <h3 class="ms-2">Progetto front-end codeCademy</h3>
-                            <img src="public/img/DoTravel.jpeg" alt="" class="img-fluid projectImg">
-                        </div>
-                        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center card-project m-4">
-                            <h3 class="ms-2">Progetto finale Aulab</h3>
-                            <img src="public/img/DoTravel.jpeg" alt="" class="img-fluid projectImg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </article>
 
-        <article>
           <div class="container-fluid">
             <div class="row">
-              <div class="col-12">
-                <h2 class="m-2">Contattami</h2>
+
+              <div class="col-11 m-auto project">
+                <h2 class="m-2">I miei progetti</h2>
+
+                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center card-project m-4">
+                  <h3 class="ms-2">
+                    <a href="form-a-story/index.html">
+                      <button class="btn btn-dark fs-3">FORM-A-STORY</button>
+                    </a>
+                  </h3>
+                  <img src="public/img/form-a-story.png" alt="immagine del sito FORM-A-STORY" class="img-fluid projectImg" />
+                </div>
+
+                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center card-project m-4">
+                  <h3 class="ms-2">Progetto Fallout "NUKA-TERMINAL"</h3>
+                  <img src="public/img/DoTravel.jpeg" alt="" class="img-fluid projectImg" />
+                </div>
+
+                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center card-project m-4">
+                  <h3 class="ms-2">Progetto front-end codeCademy</h3>
+                  <img src="public/img/DoTravel.jpeg" alt="" class="img-fluid projectImg" />
+                </div>
+
+                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center card-project m-4">
+                  <h3 class="ms-2">Progetto finale Aulab</h3>
+                  <img src="public/img/DoTravel.jpeg" alt="" class="img-fluid projectImg" />
+                </div>
 
               </div>
+
             </div>
           </div>
 
         </article>
-
       </section>
+
     </main>
 
+    <!--=================== FOOTER ===================-->
+    <footer class="text-center" id="contatti">
+
+      <section>
+        <div class="container text-center mt-5">
+          <div class="row mt-3">
+            
+            <div class="col-md-12 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Maurizio Schiavarelli</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque inventore molestias dolor cumque quam harum. Assumenda eveniet deleniti officia voluptatum architecto atque praesentium illo beatae ducimus. Maiores nemo dignissimos fugiat.</p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Tecnologie utilizzate</h6>
+              <p><a href="#!" class="text-reset">HTML</a></p>
+              <p><a href="#!" class="text-reset">CSS</a></p>
+              <p><a href="#!" class="text-reset">JAVASCRIPT</a></p>
+              <p><a href="#!" class="text-reset">LARAVEL</a></p>
+            </div>
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Link utili</h6>
+              <p><a href="#!" class="text-reset">Profilo Linkedin</a></p>
+              <p><a href="#!" class="text-reset">Curriculum</a></p>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Contatti</h6>
+              <p> Santeramo in colle (BA)</p>
+              <p>maurizioschiavarelli@gmail.com</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <div class="text-center p-4">
+        <p>© madeWhitLove:<a class="text-reset fw-bold" href=""> maurizioschiavarelli</a></p>
+      </div>
+
+    </footer>    
+
+    <!--=================== SCRIPT ===================-->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>
+    
   </body>
 </html>

@@ -9,7 +9,7 @@
 :root{
     font-size: 16px;
     --text-color: #ffffff;
-    --link-color: #f80000;
+    --black-color: #050505;
 }
 
 a{
@@ -21,6 +21,13 @@ body{
     margin-top: 45px;
     background-color: #0d0113;
 }
+
+
+@media (max-width: 399px) {
+    body{
+        margin-top: 86px;
+    }
+  }
 
 header{
     margin: 22px;
@@ -118,6 +125,16 @@ nav ul li{
     color: var(--text-color);
 }
 
+@media (max-width: 532px) {
+    nav ul li{
+        margin: 10px;
+        list-style: none;
+        color: var(--text-color);
+    }
+  }
+
+
+
 /* ================== HERO SECTION ================== */
 .bgimage {
     height:100vh;
@@ -126,6 +143,7 @@ nav ul li{
     background-size:cover;
     background-position: center;
     position:relative;
+    border-radius: 20px;
 }
 
 .hero_title {
@@ -183,7 +201,8 @@ header ul li{
 }
 
 .project div h3{
-    max-width: 200px;
+    max-width: 230px;
+    margin: 6px;
 }
 
 .projectImg{
@@ -198,4 +217,12 @@ header ul li{
         height: 200px;
         object-fit: cover;
     }
+
+    .project div h3{
+        max-width: 100%;
+        margin: 8px;
+    }
   }
+
+  /* ================== CONTATTAMI ================== */
+
