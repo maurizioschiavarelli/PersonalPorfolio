@@ -16,7 +16,7 @@ let checkbox = document.getElementById('checkbox');
 
 checkbox.addEventListener('click',()=>{
     if(body.classList == ''){
-        body.classList = 'whiteMode';
+        body.classList = 'lightMode';
     }else{
         body.classList = '';
     }

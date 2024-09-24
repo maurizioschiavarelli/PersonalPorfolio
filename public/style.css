@@ -16,9 +16,9 @@
     --bgDarkMode-color: #0d0113;
     --black-color: #050505;
 
-    /* .white mode */
-    --bgWhiteMode-color: rgb(255, 255, 255);
-    --textWhiteMode: rgb(0, 0, 0);
+    /* .light mode */
+    --bgLightMode-color: rgb(255, 255, 255);
+    --textLightMode: rgb(0, 0, 0);
 }
 
 a{
@@ -38,25 +38,12 @@ body{
 
 }
 
-.whiteMode{
-    transition: 900ms;
-    margin-top: 45px;
-    background-color: var(--bgWhiteMode-color);
-    color: var(--textWhiteMode);
-
-    a, li, button{
-        color: var(--textWhiteMode);
-    }
-
-    nav{
-        background-color: var(--bgWhiteMode-color);
-    }
-}
 
 
-@media (max-width: 638px) {
+
+@media (max-width: 612px) {
     body{
-        margin-top: 86px;
+        margin-top: 92px;
     }
   }
 
@@ -125,43 +112,7 @@ header{
 }
 
 
-/* ================== TOGGLE DARKMODE ================== */  
-.checkbox {
-    opacity: 0;
-    position: absolute;
-  }
-  
-  .checkbox-label {
-    background-color: #111;
-    width: 50px;
-    height: 26px;
-    border-radius: 50px;
-    position: relative;
-    padding: 5px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .fa-moon {color: #f1c40f;}
-  
-  .fa-sun {color: #f39c12;}
-  
-  .checkbox-label .ball {
-    background-color: #fff;
-    width: 22px;
-    height: 22px;
-    position: absolute;
-    left: 2px;
-    top: 2px;
-    border-radius: 50%;
-    transition: transform 0.2s linear;
-  }
-  
-  .checkbox:checked + .checkbox-label .ball {
-    transform: translateX(24px);
-  }
+
 
 /* ================== NAVBAR ================== */
 .nav{
@@ -204,6 +155,12 @@ nav ul li{
     }
   }
 
+  @media (max-width: 607px) {
+    .name{
+        margin: 0px 20px;
+    }
+  }
+
 
 
 /* ================== HERO SECTION ================== */
@@ -231,14 +188,25 @@ nav ul li{
     transform: translate(-50%, -50%);
 }
 
+.heroSection{
+    width: auto;
+    background: rgba(14, 14, 14, 0.14);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(14.1px);
+    -webkit-backdrop-filter: blur(14.1px);
+    border: 2px solid rgba(14, 14, 14, 0.12);
+}
+
 /* ================== HEADER ================== */
 header{
     margin-top: 4%;
 }
 
 header img{
-    transform: rotate(2deg);
-    border-radius: 4%;
+    transform: rotate(1deg);
+    border-radius: 16px;
+    border: 3px solid black;
 }
 
 header div span{
@@ -261,8 +229,8 @@ header ul li{
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10.5px);
     -webkit-backdrop-filter: blur(10.5px);
-    border: 1px solid rgba(0, 0, 0, 0.27);
-    border-radius: 20px;
+    border: 3px solid rgba(0, 0, 0, 0.27);
+    border-radius: 16px;
 }
 
 .card-project{
@@ -287,6 +255,7 @@ header ul li{
     width: 600px;
     height: 200px;
     object-fit: cover;
+    border-radius: 15px;
 }
 
 @media (max-width: 1199px) {
@@ -300,6 +269,44 @@ header ul li{
         max-width: 100%;
         margin: 8px;
     }
+  }
+
+/* ================== TOGGLE DARKMODE ================== */  
+.checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .checkbox-label {
+    background-color: #111;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .fa-moon {color: #f1c40f;}
+  
+  .fa-sun {color: #f39c12;}
+  
+  .checkbox-label .ball {
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+  
+  .checkbox:checked + .checkbox-label .ball {
+    transform: translateX(24px);
   }
 
   /* ================== BUTTON ================== */
@@ -368,3 +375,59 @@ header ul li{
   transform: translate(0, 5%);
 }
 
+
+
+.lightMode{
+    transition: 900ms;
+    background-color: var(--bgLightMode-color);
+    color: var(--textLightMode);
+
+    a, li, button{
+        color: var(--textLightMode);
+    }
+
+    nav{
+        background-color: var(--bgLightMode-color);
+    }
+
+    .projectImg{
+        border-radius: 15px;
+    }
+
+    .card-project{
+        background-color: var(--bgLightMode-color);
+    }
+
+    .project{
+        background-color: var(--bgLightMode-color);
+        border: 3px solid var(--bgDarkMode-color);
+    }
+
+    .buttonCard{
+        color: var(--bgLightMode-color);
+    }
+
+    header img{
+        transform: rotate(1deg);
+        border-radius: 16px;
+        border: 3px solid black;
+    }
+
+    .hero_title{
+        color: var(--textDarkMode-color);
+    }
+
+    .hero_desc{
+        color: var(--textDarkMode-color);
+    }
+
+    .heroSection{
+        width: auto;
+        background: rgba(255, 255, 255, 0.01);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(11.1px);
+        -webkit-backdrop-filter: blur(11.1px);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+}
