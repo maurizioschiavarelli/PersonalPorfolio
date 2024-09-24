@@ -1,4 +1,6 @@
 /* ================== CSS RESET E MISCELLANEOUS ================== */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 *{
     margin: 0px;
     padding: 0px;
@@ -28,28 +30,31 @@ a{
 
 
 body{
+    font-family: "Montserrat", sans-serif;
     margin-top: 45px;
     background-color: var(--bgDarkMode-color);
     color: var(--textDarkMode-color);
+    transition: 900ms;
+
 }
 
-/* .whiteMode{
+.whiteMode{
+    transition: 900ms;
     margin-top: 45px;
     background-color: var(--bgWhiteMode-color);
     color: var(--textWhiteMode);
 
-    a, li{
+    a, li, button{
         color: var(--textWhiteMode);
     }
 
     nav{
         background-color: var(--bgWhiteMode-color);
-        border: 1px solid black;
     }
-} */
+}
 
 
-@media (max-width: 399px) {
+@media (max-width: 638px) {
     body{
         margin-top: 86px;
     }
@@ -119,6 +124,45 @@ header{
 
 }
 
+
+/* ================== TOGGLE DARKMODE ================== */  
+.checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .checkbox-label {
+    background-color: #111;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .fa-moon {color: #f1c40f;}
+  
+  .fa-sun {color: #f39c12;}
+  
+  .checkbox-label .ball {
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+  
+  .checkbox:checked + .checkbox-label .ball {
+    transform: translateX(24px);
+  }
+
 /* ================== NAVBAR ================== */
 .nav{
     display: flex;
@@ -136,6 +180,7 @@ header{
     width: 90%;
     border-radius: 12px;
     transition: 900ms;
+    border: 2px solid var(--black-color);
 }
 
 nav ul{
@@ -211,12 +256,22 @@ header ul li{
 
 /* ================== PROJECT ================== */
 .project{
-    background-color: var(--black-color);
+    background: rgba(0, 0, 0, 0.42);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+    border: 1px solid rgba(0, 0, 0, 0.27);
     border-radius: 20px;
 }
 
 .card-project{
-    background-color: rgb(27, 27, 27);
+    background: rgba(27, 12, 26, 0.72);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.4px);
+    -webkit-backdrop-filter: blur(7.4px);
+    border: 1px solid rgba(19, 10, 18, 0.66);
 }
 
 .project div{
@@ -234,7 +289,7 @@ header ul li{
     object-fit: cover;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
     .projectImg{
         width: 100%;
         height: 200px;
@@ -247,5 +302,69 @@ header ul li{
     }
   }
 
-  /* ================== CONTATTAMI ================== */
+  /* ================== BUTTON ================== */
+.buttonCard {
+  all: unset;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 20px;
+}
+
+.buttonCard::after,
+.buttonCard::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all .4s;
+}
+
+.buttonCard::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #28282d;
+  border-radius: 10px;
+}
+
+.buttonCard::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.buttonCard:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+.buttonCard:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.buttonCard:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
 

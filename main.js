@@ -10,6 +10,20 @@ window.addEventListener('scroll',()=>{
     }
 })
 
+/* ================== TOGGLE LIGHT/DARK MODE ================== */
+let body = document.querySelector('body');
+let checkbox = document.getElementById('checkbox');
+
+checkbox.addEventListener('click',()=>{
+    if(body.classList == ''){
+        body.classList = 'whiteMode';
+    }else{
+        body.classList = '';
+    }
+})
+
+
+
 /* ================== SECTION NUMBER ================== */
 
 //Calcolo anni di esperienza:
