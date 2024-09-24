@@ -8,19 +8,45 @@
 
 :root{
     font-size: 16px;
-    --text-color: #ffffff;
+
+    /* .dark mode */
+    --textDarkMode-color: #f1eeee;
+    --bgDarkMode-color: #0d0113;
     --black-color: #050505;
+
+    /* .white mode */
+    --bgWhiteMode-color: rgb(255, 255, 255);
+    --textWhiteMode: rgb(0, 0, 0);
 }
 
 a{
-    color: var(--text-color);
+    color: var(--textDarkMode-color);
     text-decoration: none;
 }
 
+
+
+
 body{
     margin-top: 45px;
-    background-color: #0d0113;
+    background-color: var(--bgDarkMode-color);
+    color: var(--textDarkMode-color);
 }
+
+/* .whiteMode{
+    margin-top: 45px;
+    background-color: var(--bgWhiteMode-color);
+    color: var(--textWhiteMode);
+
+    a, li{
+        color: var(--textWhiteMode);
+    }
+
+    nav{
+        background-color: var(--bgWhiteMode-color);
+        border: 1px solid black;
+    }
+} */
 
 
 @media (max-width: 399px) {
@@ -106,7 +132,7 @@ header{
     margin:20px auto;
     display: flex;
     justify-content: space-around;
-    background-color: #000000;
+    background-color: var(--black-color);
     width: 90%;
     border-radius: 12px;
     transition: 900ms;
@@ -122,14 +148,14 @@ nav ul{
 nav ul li{
     margin: 10px 20px;
     list-style: none;
-    color: var(--text-color);
+    color: var(--textDarkMode-color);
 }
 
 @media (max-width: 532px) {
     nav ul li{
         margin: 10px;
         list-style: none;
-        color: var(--text-color);
+        color: var(--textDarkMode-color);
     }
   }
 
@@ -158,7 +184,6 @@ nav ul li{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--text-color);
 }
 
 /* ================== HEADER ================== */
@@ -184,12 +209,10 @@ header ul li{
     margin: 0px 16px;
 }
 
-/* ================== MAIN ================== */
-
-
 /* ================== PROJECT ================== */
 .project{
-    background-color: black;
+    background-color: var(--black-color);
+    border-radius: 20px;
 }
 
 .card-project{
@@ -202,7 +225,7 @@ header ul li{
 
 .project div h3{
     max-width: 230px;
-    margin: 6px;
+    margin-left: 6px;
 }
 
 .projectImg{
