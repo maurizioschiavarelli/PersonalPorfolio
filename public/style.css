@@ -376,7 +376,7 @@ header ul li{
 }
 
 
-
+/* ================== LIGHTMODE CLASS ================== */
 .lightMode{
     transition: 900ms;
     background-color: var(--bgLightMode-color);
