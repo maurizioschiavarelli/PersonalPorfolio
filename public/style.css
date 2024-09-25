@@ -335,7 +335,7 @@ header ul li {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    margin-left: 20px;
+    margin: 0px 16px;
 }
 
 .buttonCard::after,
@@ -426,7 +426,7 @@ header ul li {
     .card__content {
         text-align: center;
         color: #fff;
-        padding: 5em 2.5em;
+        padding: 5em 1.8em;
 
         h2 {
             font-weight: 700;
@@ -449,16 +449,8 @@ header ul li {
             a {
                 text-decoration: none;
                 color: #fff;
-
-                &:hover {
-                    text-decoration: underline;
-                }
             }
 
-        }
-
-        p+p {
-            margin-top: 10px;
         }
 
     }
@@ -525,7 +517,7 @@ header ul li {
     .card__content {
         text-align: center;
         color: #fff;
-        padding: 5em 2.5em;
+        padding: 4.5em 0em 1.5em 1.8em;
 
         h2 {
             font-weight: 700;
