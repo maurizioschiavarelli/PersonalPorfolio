@@ -1,27 +1,27 @@
 /* ================== CSS RESET E MISCELLANEOUS ================== */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     color: var(--text-color);
 }
 
-:root{
+:root {
     font-size: 16px;
 
     /* .dark mode */
-    --textDarkMode-color: #f1eeee;
+    --textDarkMode-color: #f2f8f7;
     --bgDarkMode-color: #0d0113;
     --black-color: #050505;
 
     /* .light mode */
-    --bgLightMode-color: rgb(255, 255, 255);
+    --bgLightMode-color: rgb(247, 240, 240);
     --textLightMode: rgb(0, 0, 0);
 }
 
-a{
+a {
     color: var(--textDarkMode-color);
     text-decoration: none;
 }
@@ -29,7 +29,7 @@ a{
 
 
 
-body{
+body {
     font-family: "Montserrat", sans-serif;
     margin-top: 45px;
     background-color: var(--bgDarkMode-color);
@@ -42,16 +42,16 @@ body{
 
 
 @media (max-width: 612px) {
-    body{
+    body {
         margin-top: 92px;
     }
-  }
+}
 
-header{
+header {
     margin: 22px;
 }
 
-.name{
+.name {
     background: #6E41CF;
     background: linear-gradient(to top right, #6E41CF 10%, #B41ECF 57%);
     background-clip: text;
@@ -59,35 +59,35 @@ header{
     margin: 0px 0px;
 }
 
-.html{
+.html {
     background: #CF1F16;
     background: linear-gradient(to top right, #CF1F16 0%, #CFA879 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.css{
+.css {
     background: #4416CF;
     background: linear-gradient(to top right, #4416CF 0%, #92AEFF 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.js{
+.js {
     background: #CF9E22;
     background: linear-gradient(to top right, #CF9E22 14%, #E3FF67 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.php{
+.php {
     background: #2600CF;
     background: linear-gradient(to top right, #2600CF 0%, #AD2AFF 78%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.laravel{
+.laravel {
     background: #CF0000;
     background: linear-gradient(to top right, #CF0000 0%, #FF5D75 78%);
     background-clip: text;
@@ -95,7 +95,7 @@ header{
 
 }
 
-.react{
+.react {
     background: #2ACCCF;
     background: linear-gradient(to top right, #2ACCCF 0%, #8DC4FF 78%);
     background-clip: text;
@@ -103,7 +103,7 @@ header{
 
 }
 
-.livewire{
+.livewire {
     background: #CF66B5;
     background: linear-gradient(to top right, #CF66B5 46%, #4E74FF 78%);
     background-clip: text;
@@ -116,16 +116,17 @@ header{
 
 
 /* ================== NAVBAR ================== */
-.nav{
+.nav {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    margin: auto;;
+    margin: auto;
+    ;
     transition: 900ms;
 }
 
-.navScroll{
-    margin:20px auto;
+.navScroll {
+    margin: 20px auto;
     display: flex;
     justify-content: space-around;
     background-color: var(--black-color);
@@ -135,43 +136,43 @@ header{
     border: 2px solid var(--black-color);
 }
 
-nav ul{
+nav ul {
     display: flex;
     justify-content: center;
     margin: 0px;
     padding: 0px;
 }
 
-nav ul li{
+nav ul li {
     margin: 10px 20px;
     list-style: none;
     color: var(--textDarkMode-color);
 }
 
 @media (max-width: 532px) {
-    nav ul li{
+    nav ul li {
         margin: 10px;
         list-style: none;
         color: var(--textDarkMode-color);
     }
-  }
+}
 
-  @media (max-width: 607px) {
-    .name{
+@media (max-width: 607px) {
+    .name {
         margin: 0px 20px;
     }
-  }
+}
 
 
 
 /* ================== HERO SECTION ================== */
 .bgimage {
-    height:100vh;
+    height: 100vh;
     width: 100%;
     background: url('../public/img/coding.jpg');
-    background-size:cover;
+    background-size: cover;
     background-position: center;
-    position:relative;
+    position: relative;
     border-radius: 20px;
 }
 
@@ -179,10 +180,12 @@ nav ul li{
     font-size: 4.5rem;
     color: var(--textDarkMode-color);
 }
+
 .hero_desc {
     font-size: 2rem;
     color: var(--textDarkMode-color);
 }
+
 .hero-text {
     text-align: center;
     position: absolute;
@@ -191,7 +194,7 @@ nav ul li{
     transform: translate(-50%, -50%);
 }
 
-.heroSection{
+.heroSection {
     width: auto;
     background: rgba(14, 14, 14, 0.14);
     border-radius: 16px;
@@ -202,31 +205,30 @@ nav ul li{
 }
 
 /* ================== HEADER ================== */
-header{
+header {
     margin-top: 4%;
 }
 
-header img{
-    transform: rotate(1deg);
+header img {
     border-radius: 16px;
     border: 3px solid black;
 }
 
-header div span{
-   font-size: larger;
+header div span {
+    font-size: larger;
 }
 
-header ul{
+header ul {
     padding: 0px;
     display: flex;
 }
 
-header ul li{
+header ul li {
     margin: 0px 16px;
 }
 
 /* ================== PROJECT ================== */
-.project{
+.project {
     background: rgba(0, 0, 0, 0.42);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -236,7 +238,7 @@ header ul li{
     border-radius: 16px;
 }
 
-.card-project{
+.card-project {
     background: rgba(27, 12, 26, 0.72);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -245,16 +247,16 @@ header ul li{
     border: 1px solid rgba(19, 10, 18, 0.66);
 }
 
-.project div{
+.project div {
     max-height: 450px;
 }
 
-.project div h3{
+.project div h3 {
     max-width: 230px;
     margin-left: 6px;
 }
 
-.projectImg{
+.projectImg {
     width: 600px;
     height: 200px;
     object-fit: cover;
@@ -262,25 +264,25 @@ header ul li{
 }
 
 @media (max-width: 1199px) {
-    .projectImg{
+    .projectImg {
         width: 100%;
         height: 200px;
         object-fit: cover;
     }
 
-    .project div h3{
+    .project div h3 {
         max-width: 100%;
         margin: 8px;
     }
-  }
+}
 
-/* ================== TOGGLE DARKMODE ================== */  
+/* ================== TOGGLE DARKMODE ================== */
 .checkbox {
     opacity: 0;
     position: absolute;
-  }
-  
-  .checkbox-label {
+}
+
+.checkbox-label {
     background-color: #111;
     width: 50px;
     height: 26px;
@@ -291,13 +293,17 @@ header ul li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .fa-moon {color: #f1c40f;}
-  
-  .fa-sun {color: #f39c12;}
-  
-  .checkbox-label .ball {
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+.checkbox-label .ball {
     background-color: #fff;
     width: 22px;
     height: 22px;
@@ -306,125 +312,207 @@ header ul li{
     top: 2px;
     border-radius: 50%;
     transition: transform 0.2s linear;
-  }
-  
-  .checkbox:checked + .checkbox-label .ball {
-    transform: translateX(24px);
-  }
+}
 
-  /* ================== BUTTON ================== */
+.checkbox:checked+.checkbox-label .ball {
+    transform: translateX(24px);
+}
+
+/* ================== BUTTON ================== */
 .buttonCard {
-  all: unset;
-  background: transparent;
-  border: none;
-  position: relative;
-  color: #f0f0f0;
-  cursor: pointer;
-  z-index: 1;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  margin-left: 20px;
+    all: unset;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: #f0f0f0;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-left: 20px;
 }
 
 .buttonCard::after,
 .buttonCard::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: -99999;
-  transition: all .4s;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -99999;
+    transition: all .4s;
 }
 
 .buttonCard::before {
-  transform: translate(0%, 0%);
-  width: 100%;
-  height: 100%;
-  background: #28282d;
-  border-radius: 10px;
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    background: #28282d;
+    border-radius: 10px;
 }
 
 .buttonCard::after {
-  transform: translate(10px, 10px);
-  width: 35px;
-  height: 35px;
-  background: #ffffff15;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border-radius: 50px;
+    transform: translate(10px, 10px);
+    width: 35px;
+    height: 35px;
+    background: #ffffff15;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 50px;
 }
 
 .buttonCard:hover::before {
-  transform: translate(5%, 20%);
-  width: 110%;
-  height: 110%;
+    transform: translate(5%, 20%);
+    width: 110%;
+    height: 110%;
 }
 
 .buttonCard:hover::after {
-  border-radius: 10px;
-  transform: translate(0, 0);
-  width: 100%;
-  height: 100%;
+    border-radius: 10px;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
 }
 
 .buttonCard:active::after {
-  transition: 0s;
-  transform: translate(0, 5%);
+    transition: 0s;
+    transform: translate(0, 5%);
 }
 
+/* ================== PERSONAL CARD ================== */
+.card {
+    width: 100%;
+    height: 80%;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+
+    .card__top {
+        height: 155px;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile__photo {
+            width: 130px;
+            height: 130px;
+            position: absolute;
+            bottom: -60px;
+            left: 50%;
+            transform: translatex(-50%);
+
+            img {
+                width: 100%;
+                border-radius: 50%;
+                height: 100%;
+                object-fit: cover;
+                border: 7px solid rgba(0, 0, 0, 0.35);
+
+            }
+        }
+    }
+
+    .card__content {
+        text-align: center;
+        color: #fff;
+        padding: 5em 2.5em;
+
+        h2 {
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        h3 {
+            font-weight: 400;
+            margin: 5px 0 30px;
+            font-size: 16px;
+        }
+
+        p {
+            text-align: left;
+
+            span {
+                margin-right: 10px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #fff;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+        }
+
+        p+p {
+            margin-top: 10px;
+        }
+
+    }
+
+}
 
 /* ================== LIGHTMODE CLASS ================== */
-.lightMode{
+.lightMode {
     transition: 900ms;
     background-color: var(--bgLightMode-color);
     color: var(--textLightMode);
 
-    a, li, button{
+    a,
+    li,
+    button {
         color: var(--textLightMode);
     }
 
-    nav{
+    nav {
         background-color: var(--bgLightMode-color);
     }
 
-    .projectImg{
+    .projectImg {
         border-radius: 15px;
     }
 
-    .card-project{
+    .card-project {
         background-color: var(--bgLightMode-color);
     }
 
-    .project{
+    .project {
         background-color: var(--bgLightMode-color);
         border: 3px solid var(--bgDarkMode-color);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
     }
 
-    .buttonCard{
+    .buttonCard {
         color: var(--bgLightMode-color);
     }
 
-    header img{
-        transform: rotate(1deg);
+    header img {
         border-radius: 16px;
         border: 3px solid black;
     }
 
-    .hero_title{
+    .hero_title {
         color: var(--textDarkMode-color);
     }
 
-    .hero_desc{
+    .hero_desc {
         color: var(--textDarkMode-color);
     }
 
-    .heroSection{
+    .heroSection {
         width: auto;
         background: rgba(255, 255, 255, 0.01);
         border-radius: 16px;
@@ -433,4 +521,61 @@ header ul li{
         -webkit-backdrop-filter: blur(11.1px);
         border: 1px solid rgba(255, 255, 255, 0.12);
     }
+
+    .card__content {
+        text-align: center;
+        color: #fff;
+        padding: 5em 2.5em;
+
+        h2 {
+            font-weight: 700;
+            font-size: 24px;
+            color: var(--textLightMode);
+        }
+
+        h3 {
+            font-weight: 400;
+            margin: 5px 0 30px;
+            font-size: 16px;
+            color: var(--textLightMode);
+        }
+
+        p {
+            text-align: left;
+            color: var(--textLightMode);
+
+            span {
+                margin-right: 10px;
+            }
+
+            a {
+                text-decoration: none;
+                color: var(--textLightMode);
+
+                &:hover {
+                    text-decoration: underline;
+                    color: var(--textLightMode);
+                }
+            }
+
+        }
+
+        p+p {
+            margin-top: 10px;
+            color: var(--textLightMode);
+        }
+
+    }
+
+    a.button {
+        text-decoration: none;
+        background: var(--bgLightMode-color);
+        padding: 9px 30px 10px 30px;
+        display: inline-block;
+        margin-top: 2em;
+        color: var(--textLightMode);
+
+    }
 }
+
+
