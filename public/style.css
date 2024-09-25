@@ -167,7 +167,7 @@ nav ul li{
 .bgimage {
     height:100vh;
     width: 100%;
-    background: url('../public/img/grafik-coding.jpg');
+    background: url('../public/img/coding.jpg');
     background-size:cover;
     background-position: center;
     position:relative;
