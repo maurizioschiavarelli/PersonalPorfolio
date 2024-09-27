@@ -12,12 +12,12 @@
     font-size: 16px;
 
     /* .dark mode */
-    --textDarkMode-color: #f2f8f7;
+    --textDarkMode-color: #f8f4f2;
     --bgDarkMode-color: #0d0113;
     --black-color: #050505;
 
     /* .light mode */
-    --bgLightMode-color: rgb(247, 240, 240);
+    --bgLightMode-color: rgb(253, 253, 253);
     --textLightMode: rgb(0, 0, 0);
 }
 
