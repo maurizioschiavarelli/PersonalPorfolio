@@ -22,8 +22,6 @@ checkbox.addEventListener('click',()=>{
     }
 })
 
-
-
 /* ================== SECTION NUMBER ================== */
 
 //Calcolo anni di esperienza:

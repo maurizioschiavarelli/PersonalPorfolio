@@ -126,7 +126,7 @@ header {
 }
 
 .navScroll {
-    margin: 20px auto;
+    margin: 10px auto;
     display: flex;
     justify-content: space-around;
     background-color: var(--black-color);
@@ -426,7 +426,7 @@ header ul li {
     .card__content {
         text-align: center;
         color: #fff;
-        padding: 5em 1.8em;
+        padding: 4.5em 1.8em 1.5em 1.8em;
 
         h2 {
             font-weight: 700;
@@ -517,7 +517,7 @@ header ul li {
     .card__content {
         text-align: center;
         color: #fff;
-        padding: 4.5em 0em 1.5em 1.8em;
+        padding: 4.5em 1.8em 1.5em 1.8em;
 
         h2 {
             font-weight: 700;
