@@ -153,22 +153,6 @@ nav ul li {
     color: var(--textDarkMode-color);
 }
 
-/* @media (max-width: 532px) {
-    nav ul li {
-        margin: 10px;
-        list-style: none;
-        color: var(--textDarkMode-color);
-    }
-
-    nav ul li a{
-        margin: auto;
-        list-style: none;
-        color: var(--textDarkMode-color);
-    }
-} */
-
-
-
 
 
 /* ================== HERO SECTION ================== */
