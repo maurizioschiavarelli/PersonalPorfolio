@@ -41,7 +41,7 @@ body {
 
 
 
-@media (max-width: 612px) {
+@media (max-width: 532px) {
     body {
         margin-top: 92px;
     }
@@ -121,7 +121,6 @@ header {
     justify-content: space-around;
     width: 100%;
     margin: auto;
-    ;
     transition: 900ms;
 }
 
@@ -129,11 +128,16 @@ header {
     margin: 10px auto;
     display: flex;
     justify-content: space-around;
-    background-color: var(--black-color);
     width: 90%;
     border-radius: 12px;
     transition: 900ms;
-    border: 2px solid var(--black-color);
+    color: var(--textDarkMode-color);
+    background: rgba(12, 12, 12, 0.75);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+    border: 2px solid rgba(12, 12, 12, 0.51);
 }
 
 nav ul {
@@ -144,24 +148,26 @@ nav ul {
 }
 
 nav ul li {
-    margin: 10px 20px;
+    margin: 10px 12px;
     list-style: none;
     color: var(--textDarkMode-color);
 }
 
-@media (max-width: 532px) {
+/* @media (max-width: 532px) {
     nav ul li {
         margin: 10px;
         list-style: none;
         color: var(--textDarkMode-color);
     }
-}
 
-@media (max-width: 607px) {
-    .name {
-        margin: 0px 20px;
+    nav ul li a{
+        margin: auto;
+        list-style: none;
+        color: var(--textDarkMode-color);
     }
-}
+} */
+
+
 
 
 
@@ -471,6 +477,15 @@ header ul li {
 
     nav {
         background-color: var(--bgLightMode-color);
+    }
+
+    .navScroll {
+        background: rgba(255, 252, 252, 0.75);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(3.7px);
+        -webkit-backdrop-filter: blur(3.7px);
+        border: 2px solid rgba(255, 252, 252, 0.51);
     }
 
     .projectImg {
