@@ -20,6 +20,11 @@ form div input:not([type="radio"]){
   }
 }
 
+a{
+  color: white;
+  text-decoration: none;
+}
+
 h2 {
   font-size: 20px;
 }
@@ -69,4 +74,12 @@ input[type="radio"] {
 
 textarea{
   width: 80%;
+}
+
+/* =================== DROPDOWNTOOL ===================== */
+
+.dropdownTool{
+  position: fixed;
+  top: 2%;
+  left: 92%;
 }

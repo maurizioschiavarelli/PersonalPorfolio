@@ -16,6 +16,15 @@
 
 <body>
 
+  <div class="dropdown dropdownTool">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-dark">
+      <li><a class="dropdown-item active" href="../index.html">Homepage Porfolio</a></li>
+    </ul>
+  </div>
+
   <section id="top">
     <img src="https://content.codecademy.com/courses/learn-html-forms/formAStoryLogo.svg" alt="Logo Form A Story">
   </section>
@@ -39,9 +48,9 @@
           <hr>
           
           <div class="d-flex justify-content-center">
-            <a href="index.html" class="me-1">Ricomincia!</a>
+            <button class="btn btn-dark mb-3"><a href="index.html" class="me-1">Ricomincia!</a></button>
             <span> || </span>
-            <a href="original.html" class="ms-1">Storia Originale</a>
+            <button class="btn btn-dark mb-3"><a href="original.html" class="ms-1">Storia Originale</a></button>
           </div>
 
         </section>
@@ -50,7 +59,10 @@
     </div>
   </div>
 
+  <script src="https://kit.fontawesome.com/6a9dab359b.js" crossorigin="anonymous"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="main.js"></script>
+
 </body>
 
 </html>
