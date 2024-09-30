@@ -42,7 +42,7 @@ const story = `<p>Un <span class="word" title="id: animal-1">${firstAnimal}</spa
 // Recupera l'elemento title
 const title = document.getElementById('title');
 // Popola l'elemento title con il testo
-title.innerHTML = `Il <span class="word" title="id: animal-1">${firstAnimal}</span> E Il <span class="word" title="id: animal-2">${secondAnimal}</span>`;
+title.innerHTML = `Il <span class="word" title="id: animal-1">${firstAnimal}</span> e la <span class="word" title="id: animal-2">${secondAnimal}</span>`;
 
 // Recupera l'elemento story
 const storyEl = document.getElementById('story');
