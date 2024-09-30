@@ -80,6 +80,11 @@ textarea{
 
 .dropdownTool{
   position: fixed;
-  top: 2%;
-  left: 92%;
+  top: 20px;
+  right: 20px;
+  opacity: 0.7;
+}
+
+.dropdownTool:hover{
+  opacity: 1;
 }
