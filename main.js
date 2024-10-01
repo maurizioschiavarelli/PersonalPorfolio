@@ -35,6 +35,25 @@ function calcolaDifferenzaAnni(annoSelezionato) {
 
 numberExp.innerHTML = calcolaDifferenzaAnni('2023');
 
+/* ================== MODAL ================== */
+
+let modal1 = document.getElementById("modal1");
+let modal1Img = document.getElementById("modal1Img");
+let exitModal = document.getElementById("exitModal");
+
+modal1Img.addEventListener("click", ()=>{
+    if(modal1.style.display == "none"){
+        modal1.style.display = "block";
+    }else{
+        modal1.style.display = "none";
+    }
+})
+
+exitModal.addEventListener("click", ()=>{
+    if(modal1.style.display == "block"){
+        modal1.style.display = "none";
+    }
+})
 
 
 
