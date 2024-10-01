@@ -44,6 +44,9 @@ let exitModal = document.getElementById("exitModal");
 modal1Img.addEventListener("click", ()=>{
     if(modal1.style.display == "none"){
         modal1.style.display = "block";
+        modal1.classList.add("modal1block");
+        modal1.classList.add("modalShadow");
+        checkbox.disabled = true;
     }else{
         modal1.style.display = "none";
     }
@@ -52,6 +55,7 @@ modal1Img.addEventListener("click", ()=>{
 exitModal.addEventListener("click", ()=>{
     if(modal1.style.display == "block"){
         modal1.style.display = "none";
+        checkbox.disabled = false;
     }
 })
 

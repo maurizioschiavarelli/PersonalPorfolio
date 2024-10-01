@@ -29,7 +29,7 @@ a {
 
 
 
-body {
+body{
     font-family: "Montserrat", sans-serif;
     margin-top: 45px;
     background-color: var(--bgDarkMode-color);
@@ -37,9 +37,6 @@ body {
     transition: 900ms;
 
 }
-
-
-
 
 @media (max-width: 532px) {
     body {
@@ -454,13 +451,12 @@ header ul li {
 .modal1{
     position: fixed;
     display: flex;
-    bottom: 50%;
+    bottom: 16%;
     left: 5.4%;
     width: 89%;
     z-index: 100;
     background-color: red;
     display:none;
-    
     background: var(--bgDarkMode-color);
     opacity: 0.99;
     border-radius: 16px;
@@ -470,9 +466,14 @@ header ul li {
     border: 1px solid rgba(49, 47, 47, 0.3);
 }
 
+.exitButton{
+    border-radius: 50%;
+}
+
 .modal1 button{
     cursor: pointer;
     color: var(--textDarkMode-color);
+    margin-bottom:2px ;
 }
 
 .modal1 ul li{
@@ -480,8 +481,20 @@ header ul li {
 }
 
 .modal1 ul span{
-    margin-rigth: 16px;
+    margin-right: 16px;
 }
+
+.imgModal{
+    border-radius: 18px;
+}
+
+.modalShadow{
+    box-shadow: 0px -1px 400px 200px rgba(0,0,0,1);
+    -webkit-box-shadow: 0px -1px 400px 200px rgba(0,0,0,1);
+    -moz-box-shadow: 0px -1px 400px 200px rgba(0,0,0,1);
+}
+
+
 
 /* ================== LIGHTMODE CLASS ================== */
 .lightMode {
