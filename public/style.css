@@ -455,17 +455,17 @@ header ul li {
 /* ================== MODAL ================== */
 
 
-.modal1{
+.modal1 {
+    position: relative;
     position: fixed;
-    display: flex;
-    bottom: 16%;
-    left: 5.4%;
-    height: auto;
-    max-height: 70%;
-    width: 89%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Larghezza fissa */
+    height: 70%; /* Altezza fissa */
     z-index: 100;
     background-color: red;
-    display:none;
+    display: none;
     background: var(--bgDarkMode-color);
     opacity: 0.99;
     border-radius: 16px;
@@ -473,13 +473,14 @@ header ul li {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(49, 47, 47, 0.3);
-    overflow-y:auto;
+    overflow-y: auto;
+    scrollbar-width: none;
 }
 
 .exitButton{
-    position: sticky;
-    
-    
+    position: absolute;
+    top: 10px;
+    right: 10px;
     border-radius: 50%;
 }
 
@@ -498,12 +499,14 @@ header ul li {
 }
 
 .divImageModal{
+    width: 100%;
     overflow-y: auto;
 }
 
 .imgModal{
+    width: 100%;
     border-radius: 18px;
-    object-fit:cover;
+    object-fit:fill;
 }
 
 .modalShadow{
