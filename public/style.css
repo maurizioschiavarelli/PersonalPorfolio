@@ -460,7 +460,8 @@ header ul li {
     display: flex;
     bottom: 16%;
     left: 5.4%;
-    height: 70%;
+    height: auto;
+    max-height: 70%;
     width: 89%;
     z-index: 100;
     background-color: red;
@@ -472,10 +473,13 @@ header ul li {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(49, 47, 47, 0.3);
-    overflow: hidden;
+    overflow-y:auto;
 }
 
 .exitButton{
+    position: sticky;
+    
+    
     border-radius: 50%;
 }
 
@@ -494,7 +498,6 @@ header ul li {
 }
 
 .divImageModal{
-    height: 260px;
     overflow-y: auto;
 }
 
