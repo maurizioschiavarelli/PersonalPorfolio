@@ -1,0 +1,108 @@
+:root{
+    font-size: 16px;
+}
+
+body{
+    background-color: rgb(22, 20, 20);
+    margin:2vh;
+}
+
+*{
+    font-family: "VT323", monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, p, button{
+    font-weight: 400;
+    color: rgb(63, 207, 63);
+    text-shadow: 0 0 6px rgba(19, 43, 19, 0.92), 0 0 20px rgba(24, 163, 98, 0.92);
+}
+
+h1{
+    font-size: calc(2rem + 2.4vw);
+}
+
+p{
+    font-size: calc(0.8rem + 1.4vw);
+    margin-top: 2vh;
+}
+
+
+@keyframes blink {
+    0% {visibility: visible;}
+    50% {visibility: hidden;}
+    100% {visibility: visible;}
+  }
+  
+.flex{
+    display: flex;
+    align-items: flex-end;
+}
+
+.textBox{
+    background-color: rgb(22, 20, 20);
+    border: none;
+    color: rgb(63, 207, 63);
+    text-shadow: 0 0 6px rgba(19, 43, 19, 0.92), 0 0 20px rgba(24, 163, 98, 0.92);
+    font-size: calc(0.8rem + 1.4vw);
+    margin-left: 10px;
+    text-transform:uppercase;
+    width: 8vw;
+    outline: none;
+    
+}
+
+.inputText{
+    font-size: calc(0.8rem + 1.4vw);
+    font-weight: 400;
+    color: rgb(63, 207, 63);
+    text-shadow: 0 0 6px rgba(19, 43, 19, 0.92), 0 0 20px rgba(24, 163, 98, 0.92);
+    margin-left:1vw;
+    animation: blink 1s step-end infinite;
+}
+
+.inputTextBlack{
+    font-size: calc(0.8rem + 1.4vw);
+    font-weight: 400;
+    color: rgb(22, 20, 20);
+    margin-left:1vw;
+}
+
+.articoli p{
+    margin-right: 1vw;
+    border: 2px solid ;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+/* Nascondi il pulsante radio predefinito */
+.radio[type="radio"] {
+    display: none;
+  }
+  
+  /* Crea un nuovo pulsante radio personalizzato */
+  .radio[type="radio"] + label {
+    padding-left: 30px;
+    height: 25px;
+    display: inline-block;
+    line-height: 25px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    font-size: 15px;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  
+  /* Stile quando il pulsante radio non è selezionato */
+  .radio[type="radio"] + label {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><circle cx="10" cy="10" r="9" stroke="black" stroke-width="2" fill="white"/></svg>');
+  }
+  
+  /* Stile quando il pulsante radio è selezionato */
+  .radio[type="radio"]:checked + label {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><circle cx="10" cy="10" r="9" stroke="black" stroke-width="2" fill="green"/><circle cx="10" cy="10" r="5" fill="white"/></svg>');
+  }
