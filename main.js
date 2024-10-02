@@ -52,8 +52,8 @@ console.log(exitModal);
 function getModal(modal, modalImg) {
     modalImg.addEventListener("click", () => {
         if (modal.style.display == "none") {
-            modal.classList.add("modal1");
             modal.style.display = "block";
+            modal.classList.add("modal1");
             modal.classList.add("modalShadow");
             checkbox.disabled = true;
         } else {

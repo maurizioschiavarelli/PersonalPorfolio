@@ -106,3 +106,16 @@ p{
   .radio[type="radio"]:checked + label {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><circle cx="10" cy="10" r="9" stroke="black" stroke-width="2" fill="green"/><circle cx="10" cy="10" r="5" fill="white"/></svg>');
   }
+
+  /* =================== DROPDOWNTOOL ===================== */
+
+.dropdownTool{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    opacity: 0.7;
+  }
+  
+  .dropdownTool:hover{
+    opacity: 1;
+  }
