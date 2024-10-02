@@ -91,7 +91,7 @@ observer.observe(document.body, {
   characterData: true
 });
 
-fetch('../PROGETTO_NUKA_STORE/annunci.json').then((response) => response.json()).then((data) => {
+fetch('../progetto_nuka_store/annunci.json').then((response) => response.json()).then((data) => {
 
 
   //FUNZIONE CHE MI PERMETTE DI SELEZIONARE SI O NO
