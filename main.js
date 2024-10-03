@@ -52,6 +52,7 @@ console.log(exitModal);
 function getModal(modal, modalImg) {
     modalImg.addEventListener("click", () => {
         if (modal.style.display == "none") {
+            modal.classList.remove("d-none")
             modal.style.display = "block";
             modal.classList.add("modal1");
             modal.classList.add("modalShadow");
