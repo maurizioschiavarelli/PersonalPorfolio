@@ -39,9 +39,11 @@ numberExp.innerHTML = calcolaDifferenzaAnni('2023');
 
 let modal1 = document.getElementById("modal1");
 let modal2 = document.getElementById("modal2");
+let modal3 = document.getElementById("modal3");
 
 let modal1Img = document.getElementById("modal1Img");
 let modal2Img = document.getElementById("modal2Img");
+let modal3Img = document.getElementById("modal3Img");
 
 let exitModal = document.querySelectorAll("#exitModal");
 
@@ -75,26 +77,10 @@ function getModal(modal, modalImg) {
 
 getModal(modal1, modal1Img);
 getModal(modal2, modal2Img);
+getModal(modal3, modal3Img);
 
 
 
-// modal1Img.addEventListener("click", ()=>{
-//     if(modal1.style.display == "none"){
-//         modal1.style.display = "block";
-//         modal1.classList.add("modal1block");
-//         modal1.classList.add("modalShadow");
-//         checkbox.disabled = true;
-//     }else{
-//         modal1.style.display = "none";
-//     }
-// })
-
-// exitModal.addEventListener("click", ()=>{
-//     if(modal1.style.display == "block"){
-//         modal1.style.display = "none";
-//         checkbox.disabled = false;
-//     }
-// })
 
 
 
