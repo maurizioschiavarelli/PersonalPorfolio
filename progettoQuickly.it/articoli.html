@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+
+    <!-- link font -->
+    <link href="https://api.fontshare.com/v2/css?f[]=poppins@2,900,901,701,801,201,401,301,500,400,601,100,1,300,501,101,800,700,200,600&f[]=supreme@501,2,800,400,401,200,100,300,101,301,500,201,801,1,701,700&display=swap" rel="stylesheet">
+
+    <!-- bootstrap -->
+    
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+  <div class="dropdown dropdownTool">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-dark">
+      <li><a class="dropdown-item active" href="../index.html">Homepage Porfolio</a></li>
+    </ul>
+  </div>
+    
+  <nav id="navContainer" class="">
+    <ul class="navbar" id="navbar">
+        <li class="logo"><a href="../progettoQuickly.it/index.html">QUICKLY.IT</a></li>
+        <li><a href="../progettoQuickly.it/index.html" class="active">Home</a></li>
+        <li><a href="../progettoQuickly.it/articoli.html">Articoli</a></li>
+        <li><a href="">About</a></li>
+    </ul>
+</nav>
+
+
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Categoria
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body" id="accordionBody">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="all" checked>
+                <label class="form-check-label" for="flexRadioDefault1">
+                  tutte
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="favourites">
+                <label class="form-check-label" for="favourites">
+                  preferiti
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Prezzo
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <input type="range" min="0" max="1000" value="50" id="priceInput">
+              <p class="lead" id="priceInputValue">0</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Nome
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <input type="text" id="inputWord">
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    <header>
+
+        <div class="articoliHero">
+            <h1>Articoli</h1>
+            <p>Trova i tuoi articoli per sopravvivere nel nuovo mondo</p>
+        </div>
+
+    </header>
+
+    <section>
+        
+        <div class="rowy" id="wrapperArticoli">
+            <!-- qui si generano le card annunci -->
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!-- bootstrap  -->
+    
+    <script src="https://kit.fontawesome.com/6a9dab359b.js" crossorigin="anonymous"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="https://kit.fontawesome.com/e18161aa2d.js"crossorigin="anonymous"></script>
+    <!-- my script -->
+    <script src="articoli.js"></script>
+</body>
+</html>
