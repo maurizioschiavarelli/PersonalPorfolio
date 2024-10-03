@@ -21,8 +21,8 @@ let selezioneCategoria = document.querySelector('#selezioneCategoria');
 //TESTI DA VISUALIZZARE LETTERA PER LETTERA
 let txtH1 = 'BENVENUTO AL TERMLINK NUKA-STORE INDUSTRIES (TM)';
 let txtP = `Siamo lieti di vederti nel nostro negozio di approvvigionamento NUKA-STORE. Qui troverai tutto ciò di cui hai bisogno per sopravvivere nel deserto: armi, armature, medicinali e molto altro ancora. Ricorda ogni Caps é importante.`;
-let txtConferma = `Vuoi procedere con gli acquisti? Premi il tasto "TAB" e digita "SI/NO", poi premi il tasto "INVIO"`;
-let txtSeiSicuro = `Sei sicuro? Premi il tasto "TAB" e digita "CERTO/NON NE SONO SICURO", poi premi il tasto "INVIO"`;
+let txtConferma = `Vuoi procedere con gli acquisti? Scrivi "SI/NO"`;
+let txtSeiSicuro = `Sei sicuro? Scrivi "CERTO/NON NE SONO SICURO"`;
 let nonNeSonoSicuro = `Ok, ti lascio un po di tempo per pensare.Il programma si riavviera tra 5 secondi.`;
 let certo = `Vabene ecco i tuoi articoli :`
 let txtselezioneCPN = `Digita CATEGORIA/PREZZO/NOME per avviare il tipo di selezione :`
@@ -94,18 +94,40 @@ observer.observe(document.body, {
 fetch('../progetto_nuka_store/annunci.json').then((response) => response.json()).then((data) => {
 
 
-  //FUNZIONE CHE MI PERMETTE DI SELEZIONARE SI O NO
-  inputConferma.addEventListener('keydown', (e) => {
-    let input = e.target.value;
-    if (e.key === 'Enter' && input.trim().toLowerCase() === 'si') {
+  inputConferma.addEventListener('input', (e) => {
+    let input = e.target.value.trim().toLowerCase();
+    if (input === 'si') {
       typeWriter(seiSicuro, txtSeiSicuro, 50);
       spostaCursore.style.display = 'none';
-      inputConferma.value = ''
-      inputConferma.style.display = 'none'
+      inputConferma.value = '';
+      inputConferma.style.display = 'none';
       setTimeout(() => {
         spostaCursore1.appendChild(cursore1);
       }, 20000);
-    } else if ((input.trim().toLowerCase() === 'no')) {
+    } else if (input === 'no') {
+      typeWriter(articoli, nonNeSonoSicuro, 50);
+      spostaCursore1.style.display = 'none';
+      inputConferma.value = '';
+      inputConferma.style.display = 'none';
+      setTimeout(() => {
+        location.reload();
+      }, 9000);
+    }
+  });
+
+  //FUNZIONE CHE MI PERMETTE DI SELEZIONARE certo O non ne sono sicuro
+  inputConferma1.addEventListener('input', (e) => {
+    let input = e.target.value.trim().toLowerCase();
+    if (input === 'certo') {
+      typeWriter(articoli, certo, 50);
+      spostaCursore1.style.display = 'none';
+      inputConferma1.value = '';
+      inputConferma1.style.display = 'none';
+      //genera articoli
+      setTimeout(() => {
+        showCard();
+      }, 2000);
+    } else if (input === 'non ne sono sicuro') {
       typeWriter(articoli, nonNeSonoSicuro, 50);
       spostaCursore1.style.display = 'none';
       inputConferma1.value = '';
@@ -116,29 +138,6 @@ fetch('../progetto_nuka_store/annunci.json').then((response) => response.json())
     }
   });
 
-  //FUNZIONE CHE MI PERMETTE DI SELEZIONARE certo O non ne sono sicuro
-  inputConferma1.addEventListener('keydown', (e) => {
-    let input = e.target.value;
-    if (e.key === 'Enter' && input.trim().toLowerCase() === 'certo') {
-      typeWriter(articoli, certo, 50);
-      spostaCursore1.style.display = 'none';
-      inputConferma1.value = ''
-      inputConferma1.style.display = 'none';
-      //genera articoli
-      setTimeout(()=>{
-        showCard();
-      },2000);
-      
-    } else if (e.key === 'Enter' && input.trim().toLowerCase() === 'non ne sono sicuro') {
-      typeWriter(articoli, nonNeSonoSicuro, 50);
-      spostaCursore1.style.display = 'none';
-      inputConferma1.value = '';
-      inputConferma1.style.display = 'none';
-      setTimeout(() => {
-        location.reload();
-      }, 9000);
-    };
-  });
 
   let i = 0;
   
