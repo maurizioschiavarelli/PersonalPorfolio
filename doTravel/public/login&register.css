@@ -1,0 +1,83 @@
+.FormLoginRegister {
+    position: absolute;
+    z-index: 30;
+    top: 50%;
+    left: 50%;
+    color: var(--text-color);
+    transform: translate(-50%, -60%);
+    pointer-events: auto;
+}
+
+.FormLoginH2{
+    position: absolute;
+    z-index: 18;
+    top: 45%;
+    left: 49.5%;
+    color: rgba(252, 252, 253, 0.28);
+    transform: translate(-50%, -60%);
+    pointer-events: auto;
+    font-size: calc(6rem + 5vw);
+}
+
+.FormRegisterH2{
+    position: absolute;
+    z-index: 18;
+    top: 45%;
+    left: 49.5%;
+    color: rgba(252, 252, 253, 0.28);
+    transform: translate(-50%, -60%);
+    pointer-events: auto;
+    font-size: calc(6rem + 5vw);
+}
+
+.register_input{
+    background-color: rgba(17, 25, 40, 0.57);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: var(--text-color);
+}
+
+.register_input:focus{
+    background-color: rgba(17, 25, 40, 0.57);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: var(--text-color);
+}
+
+.login_input{
+    background-color: rgba(17, 25, 40, 0.57);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: var(--text-color);
+}
+
+.login_input:focus{
+    background-color: rgba(17, 25, 40, 0.57);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: var(--text-color);
+}
+
+.register_label{
+    color: var(--text-color);
+}
+
+.login_label{
+    color: var(--text-color);
+}
+
+.login_button{
+    background-color: rgba(17, 25, 40, 0.57);
+    color: var(--text-color);
+}
+
+.login_button:hover{
+    background-color: rgba(8, 9, 12, 0.57);
+    color: var(--text-color);
+}
+
+.register_button{
+    background-color: rgba(17, 25, 40, 0.57);
+    color: var(--text-color);
+}
+
+.register_button:hover{
+    background-color: rgba(8, 9, 12, 0.57);
+    color: var(--text-color);
+}

@@ -1,0 +1,89 @@
+.cardCustom{
+    background-color: rgba(17, 25, 40, 0.37);
+    color: var(--text-color);
+    font-size: 1.2rem;
+    max-height: 600px;
+    height: 600px;
+}
+.cardCustom:hover{
+    background-color: rgba(13, 18, 27, 0.57);
+    color: var(--text-color);
+    transform: scale(1.05);
+    transition: transform s;
+}
+
+.cardCustom div a{
+    color: var(--text-color);
+    padding: 6px 10px;
+    border-radius: 8px;
+    background-color: rgba(17, 25, 40, 0.57);
+}
+
+.cardCustom div a:hover{
+    color: var(--text-color);
+    padding: 6px 10px;
+    border-radius: 8px;
+    background-color: rgba(7, 9, 14, 0.57);
+}
+
+.img-custom-card{
+    height: 400px;
+    object-fit:cover;
+}
+
+/* carousel */
+
+.imgCustom{
+    height: 800px;
+    object-fit: cover;
+}
+
+.card-title{
+    color: rgba(252, 252, 253, 0.9);
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+    bottom: 130%;
+    background-color: rgba(7, 9, 14, 0.77);
+    border-radius: 12px;
+
+}
+
+.carouselCustom{
+    margin-top: 120px;
+}
+
+.carousel-item div p, h5 {
+    background-color: rgba(7, 9, 14, 0.57);
+    color: var(--text-color);
+    border-radius: 20px;
+    width: 40%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 900px) {
+    .carousel-item div p, h5 {
+        background-color: rgba(7, 9, 14, 0.57);
+        color: var(--text-color);
+        border-radius: 20px;
+        width: 100%;
+    }
+}
+
+.categorySelect{
+    text-align: center;
+    background-color: rgba(17, 25, 40, 0.57);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: var(--text-color);
+    padding: 2px;
+    border-radius: 8px;
+}
+
+
+.categorySelect:hover{
+    background-color: rgba(8, 9, 12, 0.57);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: var(--text-color);
+}
+
+
+

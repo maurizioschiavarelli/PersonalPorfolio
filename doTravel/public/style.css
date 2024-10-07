@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+}
+
+:root{
+    --text-color:white;
+    --background-color:rgba(17, 25, 40, 0.57);
+}
+
+body{
+    background-color: rgb(222, 231, 231);
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
