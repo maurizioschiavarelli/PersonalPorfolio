@@ -26,14 +26,14 @@ checkbox.addEventListener('click',()=>{
 /* ================== SECTION NUMBER ================== */
 
 //Calcolo anni di esperienza:
-let numberExp = document.getElementById('numberExp');
+// let numberExp = document.getElementById('numberExp');
 
-function calcolaDifferenzaAnni(annoSelezionato) {
-    const annoCorrente = new Date().getFullYear();
-    return annoCorrente - annoSelezionato;
-}
+// function calcolaDifferenzaAnni(annoSelezionato) {
+//     const annoCorrente = new Date().getFullYear();
+//     return annoCorrente - annoSelezionato;
+// }
 
-numberExp.innerHTML = calcolaDifferenzaAnni('2023');
+// numberExp.innerHTML = calcolaDifferenzaAnni('2023');
 
 /* ================== MODAL ================== */
 let main = document.getElementById("main");
