@@ -221,7 +221,7 @@ header ul li {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10.5px);
     -webkit-backdrop-filter: blur(10.5px);
-    border: 3px solid rgba(0, 0, 0, 0.27);
+    border: 2px solid rgba(0, 0, 0, 0.27);
     border-radius: 16px;
 }
 
@@ -552,7 +552,7 @@ header ul li {
 
     .project {
         background-color: var(--bgLightMode-color);
-        border: 3px solid var(--bgDarkMode-color);
+        border: 2px solid var(--bgDarkMode-color);
         box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
     }
 
@@ -647,6 +647,8 @@ header ul li {
         color: var(--textDarkMode-color);
     }
 }
+
+
 
 
 

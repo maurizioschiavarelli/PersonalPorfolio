@@ -36,28 +36,31 @@ function calcolaDifferenzaAnni(annoSelezionato) {
 numberExp.innerHTML = calcolaDifferenzaAnni('2023');
 
 /* ================== MODAL ================== */
+let main = document.getElementById("main");
 
 let modal1 = document.getElementById("modal1");
 let modal2 = document.getElementById("modal2");
 let modal3 = document.getElementById("modal3");
+let modal4 = document.getElementById("modal4");
 
 let modal1Img = document.getElementById("modal1Img");
 let modal2Img = document.getElementById("modal2Img");
 let modal3Img = document.getElementById("modal3Img");
+let modal4Img = document.getElementById("modal4Img");
 
 let exitModal = document.querySelectorAll("#exitModal");
 
 let links = document.querySelectorAll('a');
 
-console.log(exitModal);
-
 function getModal(modal, modalImg) {
     modalImg.addEventListener("click", () => {
         if (modal.style.display == "none") {
-            modal.classList.remove("d-none")
+            modal.classList.remove("d-none");
             modal.style.display = "block";
             modal.classList.add("modal1");
             modal.classList.add("modalShadow");
+            body.style.overflow = "hidden";
+            main.style.pointerEvents = "none";
             checkbox.disabled = true;
         } else {
             modal.style.display = "none";
@@ -68,6 +71,8 @@ function getModal(modal, modalImg) {
         exit.addEventListener("click", () => {
             if (modal.style.display == "block") {
                 modal.style.display = "none";
+                main.style.pointerEvents = "";
+                body.style.overflow = "";
                 checkbox.disabled = false;
             }
         });
@@ -78,6 +83,7 @@ function getModal(modal, modalImg) {
 getModal(modal1, modal1Img);
 getModal(modal2, modal2Img);
 getModal(modal3, modal3Img);
+getModal(modal4, modal4Img);
 
 
 
