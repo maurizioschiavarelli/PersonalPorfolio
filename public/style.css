@@ -183,12 +183,12 @@ nav ul li {
 
 .heroSection {
     width: auto;
-    background: rgba(14, 14, 14, 0.14);
+    background: rgba(63, 62, 62, 0.72);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(14.1px);
-    -webkit-backdrop-filter: blur(14.1px);
-    border: 1px solid rgba(14, 14, 14, 0.12);
+    backdrop-filter: blur(0.5px);
+    -webkit-backdrop-filter: blur(0.5px);
+    border: 1px solid rgba(63, 62, 62, 0.3);
 }
 
 /* ================== HEADER ================== */
@@ -456,6 +456,7 @@ header ul li {
 
 
 .modal1 {
+    transition: 900ms;
     position: relative;
     position: fixed;
     top: 50%;
@@ -478,6 +479,7 @@ header ul li {
 }
 
 .exitButton{
+    transition: 900ms;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -513,6 +515,14 @@ header ul li {
     box-shadow: 0px -1px 400px 200px rgb(34, 32, 32);
     -webkit-box-shadow: 0px -1px 400px 200px rgb(14, 11, 11);
     -moz-box-shadow: 0px -1px 400px 200px rgba(0,0,0,1);
+}
+
+@media (max-width: 777px){
+    .modalShadow{
+        -webkit-box-shadow: 0px 0px 225px 149px rgba(0,0,0,0.76);
+-moz-box-shadow: 0px 0px 225px 149px rgba(0,0,0,0.76);
+box-shadow: 0px 0px 225px 149px rgba(0,0,0,0.76);
+    }
 }
 
 
@@ -575,12 +585,12 @@ header ul li {
 
     .heroSection {
         width: auto;
-        background: rgba(255, 255, 255, 0.01);
+        background: rgba(63, 62, 62, 0.72);
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(11.1px);
-        -webkit-backdrop-filter: blur(11.1px);
-        border: 1px solid rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(0.5px);
+        -webkit-backdrop-filter: blur(0.5px);
+        border: 1px solid rgba(63, 62, 62, 0.3);
     }
 
     .card__content {
@@ -647,8 +657,6 @@ header ul li {
         color: var(--textDarkMode-color);
     }
 }
-
-
 
 
 
