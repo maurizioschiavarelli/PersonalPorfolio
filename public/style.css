@@ -46,7 +46,7 @@ body{
 
 .bodyBlur{
     main, footer, header, section{
-        transition: 200ms;
+        transition: 120ms;
         filter: blur(10px);
     }
 }
