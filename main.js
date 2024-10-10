@@ -59,6 +59,7 @@ function getModal(modal, modalImg) {
             modal.style.display = "block";
             modal.classList.add("modal1");
             modal.classList.add("modalShadow");
+            body.classList.add("bodyBlur");
             body.style.overflow = "hidden";
             main.style.pointerEvents = "none";
             checkbox.disabled = true;
@@ -73,6 +74,7 @@ function getModal(modal, modalImg) {
                 modal.style.display = "none";
                 main.style.pointerEvents = "";
                 body.style.overflow = "";
+                body.classList.remove("bodyBlur");
                 checkbox.disabled = false;
             }
         });
