@@ -20,7 +20,7 @@
     --bgDarkMode-color: #120324;
     --secondary-color:#241238;
     --tertiary-color:#301d46;
-    --modal-color:#3d205f;
+    --modal-color:#180231;
     --black-color: #020202;
 
     /* .light mode */
@@ -360,7 +360,7 @@ header ul li {
     transform: translate(0%, 0%);
     width: 100%;
     height: 100%;
-    background: #28282e;
+    background: #181616;
     border-radius: 10px;
 }
 
@@ -517,7 +517,7 @@ header ul li {
 
 .imgModal{
     width: 100%;
-    border-radius: 18px;
+    border-radius: 15px;
     object-fit:fill;
 }
 
