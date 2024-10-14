@@ -510,6 +510,16 @@ header ul li {
     margin-right: 16px;
 }
 
+@media  (max-width: 900px) {
+    .modal1 ul li{
+        margin: 12px 10px;
+    }
+    
+    .modal1 ul span{
+        margin-right: 8px;
+    }
+}
+
 .divImageModal{
     width: 100%;
     overflow-y: auto;
