@@ -37,7 +37,8 @@ a {
 
 
 body{
-    font-family: "Montserrat", sans-serif;
+   
+    font-family: "Roboto Mono", monospace;
     margin-top: 45px;
     background-color: var(--bgDarkMode-color);
     color: var(--textDarkMode-color);
@@ -122,6 +123,21 @@ header {
 
 }
 
+.softSkills{
+    background: #709A72;
+    background: linear-gradient(to bottom, #709A72 2%, #05CF23 93%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.softSkills2{
+    color: #e97980; 
+    background-image: linear-gradient(180deg, #e97980 11%, #be4eb2 45%, #e65ce7 83%); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+
 
 
 
@@ -177,6 +193,7 @@ nav ul li {
 }
 
 .hero_title {
+    font-family: "Montserrat", sans-serif;
     font-size: 4.5rem;
     color: var(--textDarkMode-color);
 }
@@ -198,10 +215,10 @@ nav ul li {
     width: auto;
     background: rgba(0, 0, 0, 0.72);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(0.5px);
-    -webkit-backdrop-filter: blur(0.5px);
-    border: 1px solid rgba(63, 62, 62, 0.3);
+    background-size: 100% 100%;
+background-position: 0px 0px;
+background-image: linear-gradient(90deg, #A100FFFF 0%, #71C4FFFF 100%);
+    
 }
 
 /* ================== HEADER ================== */
@@ -434,7 +451,7 @@ header ul li {
     .card__content {
         text-align: center;
         color: #fff;
-        padding: 4.5em 1.8em 1.5em 1.8em;
+        padding: 4.5em 1.1em 1.1em 1.1em;
 
         h2 {
             font-weight: 700;
@@ -535,7 +552,7 @@ header ul li {
 /* ================== LIGHTMODE CLASS ================== */
 .lightMode {
     transition: 900ms;
-    background-color: var(--bgLightMode-color);
+    background-color: rgb(243, 238, 238);
     color: var(--textLightMode);
 
     a,
@@ -590,12 +607,10 @@ header ul li {
 
     .heroSection {
         width: auto;
-        background: rgba(63, 62, 62, 0.72);
         border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(0.5px);
-        -webkit-backdrop-filter: blur(0.5px);
-        border: 1px solid rgba(63, 62, 62, 0.3);
+        background-size: 100% 100%;
+        background-position: 0px 0px;
+        background-image: linear-gradient(90deg, #A100FFFF 0%, #71C4FFFF 100%);
     }
 
     .card__content {
@@ -603,7 +618,7 @@ header ul li {
         text-align: center;
         background-color: var(--bgLightMode-color);
         color: #fff;
-        padding: 4.5em 1.8em 1.5em 1.8em;
+        padding: 4.5em 1.1em 1.1em 1.1em;
 
         h2 {
             font-weight: 700;

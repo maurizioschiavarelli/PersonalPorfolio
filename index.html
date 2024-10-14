@@ -12,6 +12,11 @@
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="public/style.css" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+
 </head>
 
 <!--=================== BODY ===================-->
@@ -21,13 +26,13 @@
   <!--=================== NAVBAR ===================-->
   <nav class="nav fixed-top" id="nav">
 
-    <ul id="navNameLogo" class="d-none d-sm-block">
+    <ul id="navNameLogo" class="d-none d-md-block">
       <!-- <li><img src="public/img/OIG4.cf.definitivo.png" alt="logo"></li> -->
-      <li><a href="#home" class="name m-0" id="name">Maurizio Schiavarelli</a></li>
+      <li><a href="#home" class="name m-0" id="name"><strong>Maurizio Schiavarelli</strong></a></li>
     </ul>
 
     <ul>
-      <li><a href="#chiSono">Chi sono</a></li>
+      <li><a href="#chiSono">ChiSono</a></li>
       <li><a href="#progetti">Progetti</a></li>
       <li><a href="#contatti">Contatti</a></li>
       <li>
@@ -52,7 +57,7 @@
 
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text heroSection">
           <h2 class="hero_title">Ciao, sono Maurizio</h2>
-          <p class="hero_desc">Ex studente Aulab e sviluppatore web junior</p>
+          <p class="hero_desc">Studente Aulab e sviluppatore web junior</p>
         </div>
 
       </div>
@@ -67,7 +72,7 @@
       <div class="row align-items-center">
 
         <div class="col-12 col-md-6">
-          <h2 class="h2 text-start">Ciao, sono <span class="name">Maurizio</span></h2>
+          <h2 class="h2 text-start">Ciao, sono <span class="name fw-bold">Maurizio</span></h2>
           <h3>Web Developer Junior</h3>
           <p>
             Sono un appassionato sviluppatore JavaScript, sempre alla ricerca
@@ -76,19 +81,30 @@
             JavaScript Back-End Developer. Sono costantemente impegnato nella
             mia formazione e crescita professionale.
           </p>
-          <h4>Linguaggi conosciuti e in fase di studio:</h4>
+          <h4 class="mt-2 fw-bolder">Linguaggi conosciuti e in fase di studio:</h4>
           <ul>
-            <li class="html">HTML</li>
-            <li class="css">CSS</li>
-            <li class="js">JAVASCRIPT</li>
-            <li class="php">PHP</li>
+            <li class="html fw-bold">HTML</li>
+            <li class="css fw-bold">CSS</li>
+            <li class="js fw-bold">JAVASCRIPT</li>
+            <li class="php fw-bold">PHP</li>
           </ul>
-          <h4>Framework conosciuti e in fase di studio:</h4>
+          <hr>
+          <h4 class="mt-2 fw-bolder">Framework conosciuti e in fase di studio:</h4>
           <ul>
-            <li class="laravel">LARAVEL</li>
-            <li class="react">REACT</li>
-            <li class="livewire">LIVEWIRE</li>
+            <li class="laravel fw-bold">LARAVEL</li>
+            <li class="react fw-bold">REACT</li>
+            <li class="livewire fw-bold">LIVEWIRE</li>
           </ul>
+          <hr>
+          <h4 class="mt-2 fw-bolder">Soft Skills</h4>
+          <ul class="d-flex flex-wrap">
+            <li class="fw-bold softSkills2">COMUNICAZIONE</li>
+            <li class="fw-bold softSkills">LAVORO DI SQUADRA</li>
+            <li class="fw-bold softSkills2">PROBLEM SOLVING</li>
+            <li class="fw-bold softSkills">GESTIONE DEL TEMPO</li>
+            <li class="fw-bold softSkills2">ADATTABILITÁ</li>
+          </ul>
+          <hr>
         </div>
 
         <div class="col-12 col-md-6 mt-5 mt-md-0">
@@ -96,7 +112,7 @@
           <div class="container">
             <div class="card">
               <div class="card__top">
-                <img src="public/img/coding.jpg" alt="Sky">
+                <img src="public/img/coding.jpg" alt="immagine di sfondo che rappresenta un codice javascript">
                 <div class="profile__photo">
                   <img src="public/img/1720803690604.jpeg" alt="Profile Photo Maurizio Schiavarelli">
                 </div>
@@ -109,11 +125,11 @@
                 <p><span><i class="far fa-building"></i></span>Web Developer Junior, PHP developer, Laravel developer
                 </p>
                 <p><span><i class="far fa-envelope"></i></span>maurizioschiavarelligmail.com</p>
-                <div class="d-flex flex-column flex-xl-row">
+                <div class="d-flex flex-column flex-xxl-row">
                   <a href="curriculum/curriculum.html" class="buttonCard w-75 mt-3 m-auto me-xl-1">Vedi il mio
-                    curriculum</a>
+                    Curriculum</a>
                   <a href="public/cvMaurizioSchiavarelli.pdf" class="buttonCard w-75 mt-3 m-auto ms-xl-1"
-                    download>Scarica il mio curriculum</a>
+                    download>Scarica Curriculum</a>
                 </div>
               </div>
             </div>
@@ -169,7 +185,7 @@
                     <button class="fs-3 buttonCard m-3">FORM-A-STORY</button>
                   </a>
                 </h3>
-                <img src="public/img/form-a-story.png" id="modal1Img" alt="immagine del sito FORM-A-STORY"
+                <img src="public/img/form-a-story.png" id="modal1Img" alt="immagine del logo del sito FORM-A-STORY"
                   class="img-fluid projectImg" />
               </div>
 
@@ -180,7 +196,8 @@
                     <button class="fs-3 buttonCard m-3">Progetto Fallout</button>
                   </a>
                 </h3>
-                <img src="public/img/fallout.jpeg" id="modal2Img" alt="fallout site" class="img-fluid projectImg" />
+                <img src="public/img/fallout.jpeg" id="modal2Img" alt="immagine del logo del sito fallout-store"
+                  class="img-fluid projectImg" />
               </div>
 
               <div
@@ -191,7 +208,7 @@
                   </a>
                 </h3>
                 <img src="./progettoQuickly.it/public/img/postApocalittico.png" id="modal3Img"
-                  alt="Logo progetto quickly" class="img-fluid projectImg" />
+                  alt="Logo e immagine rappresentativa del progetto quickly" class="img-fluid projectImg" />
               </div>
 
               <div
@@ -201,7 +218,8 @@
                     <button class="fs-3 buttonCard m-3">DoTravel viaggi</button>
                   </a>
                 </h3>
-                <img src="public/img/DoTravel.jpeg" alt="" id="modal4Img" class="img-fluid projectImg" />
+                <img src="public/img/DoTravel.jpeg" alt="immagine della pagina principale delsito doTravel"
+                  id="modal4Img" class="img-fluid projectImg" />
               </div>
 
             </div>
@@ -232,7 +250,7 @@
       <div class="container text-center mt-5">
         <div class="row mt-3">
 
-          <div class="col-md-12 col-lg-4 col-xl-3 mx-auto mb-4">
+          <div class="col-lg-12 col-lg-4 col-xl-3 mx-auto mb-4">
             <h6 class="text-uppercase fw-bold mb-4">Maurizio Schiavarelli</h6>
             <p>Sono un appassionato di sviluppo web con competenze in HTML, CSS, JavaScript, Laravel e Livewire.
               Attualmente sono alla ricerca di opportunità lavorative per mettere in pratica le mie abilità e crescere
@@ -300,9 +318,9 @@
       <li><span class="fw-bold">Autore del Progetto:</span> <br>Maurizio Schiavarelli</li>
     </ul>
     <div class="divImageModal"> <a href="form-a-story/index.html"><img src="public/img/form-a-story.png" alt="form a
-          story image" class="img-fluid imgModal"></a> 
+          story image, rappresentativa del sito" class="img-fluid imgModal"></a>
     </div>
-    
+
   </div>
 
   <!-- MODAL2 -->
@@ -330,7 +348,7 @@
       <li><span class="fw-bold">Autore del Progetto:</span> <br>Maurizio Schiavarelli</li>
     </ul>
     <div class="divImageModal"> <a href="progetto_nuka_store/index.html"><img src="public/img/fallout.jpeg" alt="fallout
-          site" class="img-fluid imgModal"></a> </div>
+          site immagine rappresentativa" class="img-fluid imgModal"></a> </div>
   </div>
 
   <!-- MODAL3 -->
@@ -357,7 +375,8 @@
       <li><span class="fw-bold">Autore del Progetto:</span> <br>Maurizio Schiavarelli</li>
     </ul>
     <div class="divImageModal"> <a href="./progettoQuickly.it/index.html"><img
-          src="./progettoQuickly.it/public/img/postApocalittico.png" alt="quickly site" class="img-fluid imgModal"></a>
+          src="./progettoQuickly.it/public/img/postApocalittico.png" alt="quickly site, immagine rappresentativa"
+          class="img-fluid imgModal"></a>
     </div>
   </div>
 
@@ -390,15 +409,15 @@
     </ul>
     <div class="divImageModal">
       <a href="./doTravel/index.html">
-        <img src="./public/img/DoTravel.jpeg" alt="do travel site" class="img-fluid imgModal">
+        <img src="./public/img/DoTravel.jpeg" alt="do travel site, immagine rappresentativa" class="img-fluid imgModal">
       </a>
-    </div> 
+    </div>
 
 
-  <!--=================== SCRIPT ===================-->
-  <script src="https://kit.fontawesome.com/6a9dab359b.js" crossorigin="anonymous"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="main.js"></script>
+    <!--=================== SCRIPT ===================-->
+    <script src="https://kit.fontawesome.com/6a9dab359b.js" crossorigin="anonymous"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
 
 </body>
 
